@@ -16,12 +16,12 @@
       <v-btn
         v-for="item in list1"
         :key="item"
-        flat
+        text
         depressed
+        :style="item.bg"
         class="grey--text btn hidden-md-and-down"
-        color="white"
       >
-        {{ item }}
+        {{ item.name }}
       </v-btn>
 
       <v-spacer />
@@ -52,12 +52,12 @@
       <v-btn
         v-for="item in list2"
         :key="item"
-        flat
+        text
         depressed
         class="grey--text btn"
-        color="white"
+        :style="item.bg"
       >
-        {{ item }}
+        {{ item.name }}
       </v-btn>
       <v-spacer />
       <div id="search">
@@ -72,7 +72,7 @@
         />
       </div>
     </v-toolbar>
-    <v-divider />
+    <v-divider class="hidden-md-and-down" />
   </div>
 </template>
 <script>

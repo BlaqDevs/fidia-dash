@@ -41,7 +41,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <!-- <Cards /> -->
+        <ChartCard />
       </v-col>
     </v-row>
     <v-row class="mx-3 hidden-md-and-up">
@@ -54,9 +54,10 @@
           style="width:320px"
         />
       </v-col>
-      <v-col cols="auto">
+      <v-col cols="">
         <v-btn
           small
+          block
           color="grey"
           class="btn "
           text
@@ -123,21 +124,7 @@
         />
       </v-col>
     </v-row>
-    <v-row class="mx-5">
-      <v-col>
       <MyTable />
-      </v-col>
-    </v-row>
-    <v-row class="mx-5">
-      <v-col>
-      <Table2 />
-      </v-col>
-    </v-row>
-    <v-row class="mx-5">
-      <v-col>
-      <Table />
-      </v-col>
-    </v-row>
   </div>
 </template>
 

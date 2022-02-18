@@ -18,6 +18,9 @@ export default {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        ],
+        script: [
+            { hid: 'chart', src: './chart.min.js', defer: true }
         ]
     },
 
@@ -61,5 +64,7 @@ export default {
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {}
+    build: {
+        transpile: ['vue-echarts', 'resize-detector']
+    }
 }
