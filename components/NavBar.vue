@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <v-app-bar
       color="white"
       class="black--text"
@@ -15,7 +15,7 @@
       </v-toolbar-title>
       <v-btn
         v-for="item in list1"
-        :key="item"
+        :key="item.name"
         text
         depressed
         :style="item.bg"
@@ -51,7 +51,7 @@
     <v-toolbar dense flat color="" height="65" class="hidden-md-and-down">
       <v-btn
         v-for="item in list2"
-        :key="item"
+        :key="item.name"
         text
         depressed
         class="grey--text btn"
@@ -73,7 +73,7 @@
       </div>
     </v-toolbar>
     <v-divider class="hidden-md-and-down" />
-  </div>
+  </v-container>
 </template>
 <script>
 import { mapGetters } from 'vuex'

@@ -2,9 +2,9 @@
   <v-app>
     <NavBar />
     <v-main>
-      <v-container-fluid>
+      <v-container>
         <Nuxt />
-      </v-container-fluid>
+      </v-container>
     </v-main>
   </v-app>
 </template>

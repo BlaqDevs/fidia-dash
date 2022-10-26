@@ -86,7 +86,7 @@
         </v-btn>
       </v-col>
       <v-col cols="auto">
-         <v-btn
+        <v-btn
           small
           color="#8963DC"
           class="btn "
@@ -124,7 +124,7 @@
         />
       </v-col>
     </v-row>
-      <MyTable />
+    <MyTable />
   </div>
 </template>
 

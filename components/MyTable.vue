@@ -20,7 +20,7 @@
                     :value="!selectAll"
                   />
                 </b-td>
-                <b-td v-for="item in tableHead" :key="item" variant="grey" :class="item.visibility">
+                <b-td v-for="item in tableHead" :key="item.name" variant="grey" :class="item.visibility">
                   {{ item.name }} <v-icon small left color="">
                     {{ item.icon }}
                   </v-icon>
